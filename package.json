@@ -1,0 +1,35 @@
+{
+  "name": "hockey_db",
+  "version": "1.0.0",
+  "description": "A database of hockey players",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mordredi/hockeyDB.git"
+  },
+  "keywords": [
+    "hockey",
+    "node",
+    "express",
+    "bootstrap"
+  ],
+  "author": "Arthur Wright",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mordredi/hockeyDB/issues"
+  },
+  "homepage": "https://github.com/Mordredi/hockeyDB#readme",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "mongoose": "^4.0.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-sass": "^2.0.4"
+  }
+}
