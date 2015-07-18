@@ -8,23 +8,31 @@
   <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-  <h1>Welcome to HockeyDB</h1>
-  <button data-modal="create-player" class="btn btn-default btn-open">Create Player</button>
-  <div class="table-responsive">
-    <table class="table table-striped">
-      <tr>
-        <th>Name</th>
-        <th>Team</th>
-        <th>Points</th>
-        <th>Goals</th>
-        <th>Assists</th>
-        <th>+/-</th>
-        <th>Admin</th>
-      </tr>
-    </table>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to HockeyDB</h1>
+      <p>Add your favourite players!</p>
+      <button data-modal="create" class="btn btn-success btn-open">Create Player</button>
+    </div>
   </div>
-  <div class="create-player">
-    <form id="create">
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <tr>
+          <th>Name</th>
+          <th>Team</th>
+          <th>Points</th>
+          <th>Goals</th>
+          <th>Assists</th>
+          <th>+/-</th>
+          <th>Admin</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="player-modal">
+    <form id="player-form">
+      <h2 class="form-header"></h2>
       <div class="form-group">
         <label for="name">Name</label>
         <input class="form-control" type="text" name="name" id="name">
@@ -35,21 +43,22 @@
       </div>
       <div class="form-group">
         <label for="points">Points</label>
-        <input class="form-control" type="text" name="points" id="points">
+        <input class="form-control" type="number" name="points" id="points">
       </div>
       <div class="form-group">
         <label for="goals">Goals</label>
-        <input class="form-control" type="text" name="goals" id="goals">
+        <input class="form-control" type="number" name="goals" id="goals">
       </div>
       <div class="form-group">
         <label for="assists">Assists</label>
-        <input class="form-control" type="text" name="assists" id="assists">
+        <input class="form-control" type="number" name="assists" id="assists">
       </div>
       <div class="form-group">
         <label for="plus">+/-</label>
-        <input class="form-control" type="text" name="plus" id="plus">
+        <input class="form-control" type="number" name="plus" id="plus">
       </div>
-      <button class="btn btn-default btn-create">Create</button>
+      <button class="btn btn-success btn-create">Create</button>
+      <button class="btn btn-info btn-edit">Edit</button>
     </form>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -57,5 +66,6 @@
   <script src="./public/js/modal.js"></script>
   <script src="./public/js/create.js"></script>
   <script src="./public/js/delete.js"></script>
+  <script src="./public/js/edit.js"></script>
 </body>
 </html>

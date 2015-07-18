@@ -1,4 +1,36 @@
-.create-player {
-  display: none; }
-  .create-player .show {
+.player-modal {
+  position: fixed;
+  top: 5rem;
+  width: 100%;
+  display: none;
+  z-index: 5; }
+  .player-modal .show {
     display: block; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); }
+
+@media screen and (min-width: 768px) {
+  .player-modal {
+    left: 35vw; } }
+
+.jumbotron {
+  text-align: center; }
+
+th, td {
+  text-align: center; }
+
+form {
+  text-align: center;
+  color: #fff; }
+  form input {
+    text-align: center; }
+
+@media screen and (min-width: 768px) {
+  form {
+    width: 30vw; } }

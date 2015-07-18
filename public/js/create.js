@@ -13,9 +13,10 @@ $(document).on('ready', function(){
       // dataType: 'json',
       // data: $('#create').serialize()
     }).done(function(data){
-      $('table').append('<tr><td>' + name + '</td><td>' + team + '</td><td>' + points + '</td><td>' + goals + '</td><td>' + assists + '</td><td>' + plus + '</td><td>' + '<button class="btn btn-default btn-edit">Edit</button><button class="btn btn-default btn-delete">Delete</button></td></tr>');
-      $('.create-player').removeClass('show');
-      $('#create').trigger("reset");
+      $('table').append('<tr><td class="name">' + name + '</td><td class="team">' + team + '</td><td class="points">' + points + '</td><td class="goals">' + goals + '</td><td class="assists">' + assists + '</td><td class="plus">' + plus + '</td><td>' + '<button data-modal="edit" class="btn btn-info btn-open">Edit</button><button class="btn btn-danger btn-delete">Delete</button></td></tr>');
+      $('.overlay').remove();
+      $('.player-modal').removeClass('show');
+      $('#player-form').trigger("reset");
     });
   });
 });
