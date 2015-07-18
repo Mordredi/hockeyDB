@@ -36,5 +36,8 @@ form {
   form {
     width: 30vw; } }
 
+article {
+  text-align: center; }
+
 .btn-delete {
   margin-left: 1rem; }
