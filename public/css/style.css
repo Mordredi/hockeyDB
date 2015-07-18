@@ -20,7 +20,8 @@
     left: 35vw; } }
 
 .jumbotron {
-  text-align: center; }
+  text-align: center;
+  background: #adedff; }
 
 th, td {
   text-align: center; }
@@ -34,3 +35,11 @@ form {
 @media screen and (min-width: 768px) {
   form {
     width: 30vw; } }
+
+article {
+  height: 30rem;
+  overflow: auto;
+  text-align: center; }
+
+.btn-delete {
+  margin-left: 1rem; }

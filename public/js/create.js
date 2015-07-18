@@ -7,16 +7,9 @@ $(document).on('ready', function(){
     var goals = $("#goals").val();
     var assists = $("#assists").val();
     var plus = $("#plus").val();
-    $.ajax({
-      url: 'index.html',
-      method: 'POST'
-      // dataType: 'json',
-      // data: $('#create').serialize()
-    }).done(function(data){
-      $('table').append('<tr><td class="name">' + name + '</td><td class="team">' + team + '</td><td class="points">' + points + '</td><td class="goals">' + goals + '</td><td class="assists">' + assists + '</td><td class="plus">' + plus + '</td><td>' + '<button data-modal="edit" class="btn btn-info btn-open">Edit</button><button class="btn btn-danger btn-delete">Delete</button></td></tr>');
-      $('.overlay').remove();
-      $('.player-modal').removeClass('show');
-      $('#player-form').trigger("reset");
-    });
+    $('table').append('<tr><td class="name">' + name + '</td><td class="team">' + team + '</td><td class="points">' + points + '</td><td class="goals">' + goals + '</td><td class="assists">' + assists + '</td><td class="plus">' + plus + '</td><td>' + '<button data-modal="edit" class="btn btn-info btn-open">Edit</button><button class="btn btn-danger btn-delete">Delete</button></td></tr>');
+    $('.overlay').remove();
+    $('.player-modal').removeClass('show');
+    $('#player-form').trigger("reset");
   });
 });

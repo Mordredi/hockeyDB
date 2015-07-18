@@ -5,7 +5,7 @@
   <title>HockeyDB</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./public/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div class="jumbotron">
@@ -15,7 +15,7 @@
       <button data-modal="create" class="btn btn-success btn-open">Create Player</button>
     </div>
   </div>
-  <div class="container">
+  <article class="container">
     <div class="table-responsive">
       <table class="table table-striped">
         <tr>
@@ -29,7 +29,8 @@
         </tr>
       </table>
     </div>
-  </div>
+    <button class="btn btn-primary btn-json">JSONify!</button>
+  </article>
   <div class="player-modal">
     <form id="player-form">
       <h2 class="form-header"></h2>
@@ -55,7 +56,7 @@
       </div>
       <div class="form-group">
         <label for="plus">+/-</label>
-        <input class="form-control" type="number" name="plus" id="plus">
+        <input class="form-control" type="text" name="plus" id="plus">
       </div>
       <button class="btn btn-success btn-create">Create</button>
       <button class="btn btn-info btn-edit">Edit</button>
@@ -63,9 +64,11 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="./public/js/modal.js"></script>
-  <script src="./public/js/create.js"></script>
-  <script src="./public/js/delete.js"></script>
-  <script src="./public/js/edit.js"></script>
+  <script src="/js/modal.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/create.js"></script>
+  <script src="/js/delete.js"></script>
+  <script src="/js/edit.js"></script>
+  <script src="/js/json.js"></script>
 </body>
 </html>

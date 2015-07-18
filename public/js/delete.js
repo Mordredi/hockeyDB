@@ -3,11 +3,6 @@ $(document).on('ready', function(){
     e.preventDefault();
     var row = $(this).parent().parent();
     $('.player-modal').removeClass('show');
-    $.ajax({
-      url: 'index.html',
-      method: 'DELETE',
-    }).done(function(){
-      row.remove();
-    })
-  })
+    row.remove();
+  });
 });

@@ -1,0 +1,42 @@
+{"players": [
+  {
+    "name": "Jamie Benn",
+    "team": "DAL",
+    "points": 87,
+    "goals": 35,
+    "assists": 52,
+    "plus": "+1"
+  },
+  {
+    "name": "John Tavares",
+    "team": "NYI",
+    "points": 86,
+    "goals": 38,
+    "assists": 48,
+    "plus": "+5"
+  },
+  {
+    "name": "Sidney Crosby",
+    "team": "PIT",
+    "points": 84,
+    "goals": 28,
+    "assists": 56,
+    "plus": "+5"
+  },
+  {
+    "name": "Alex Ovechkin",
+    "team": "WSH",
+    "points": 81,
+    "goals": 53,
+    "assists": 28,
+    "plus": "+10"
+  },
+  {
+    "name": "Jakub Voracek",
+    "team": "PHI",
+    "points": 81,
+    "goals": 22,
+    "assists": 59,
+    "plus": "+1"
+  }
+]}
