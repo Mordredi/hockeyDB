@@ -36,10 +36,5 @@ form {
   form {
     width: 30vw; } }
 
-article {
-  height: 30rem;
-  overflow: auto;
-  text-align: center; }
-
 .btn-delete {
   margin-left: 1rem; }
